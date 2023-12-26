@@ -21,6 +21,8 @@ public class SecurityConfig {
             .authorizeRequests()
                 .antMatchers("/api/search-tweet-user").authenticated()
                 .antMatchers("/api/get-tweets").authenticated()
+                
                 .anyRequest().permitAll();
+                
     }
 }
